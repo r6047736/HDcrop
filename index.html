@@ -1,0 +1,62 @@
+<!doctype html>
+<html >
+	<head>
+	
+	<style>
+	
+		#main_container{
+			//width:400px;
+			//height:400px;
+			margin: 0 auto;
+			border:1px solid green;
+			width:200px;
+			height:200px;
+		}
+		
+		#HDC_container{
+		border:1px solid black;	
+			
+			overflow: hidden;
+		}
+		
+		#HDC_img{
+			//width:300px;
+			
+		}
+		
+	</style>
+		   
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		
+		
+	<script src="imagecrop.js"></script>
+		
+	</head>
+	
+	
+	<body>
+		<h1> test </h1>
+	
+		
+		<div id="main_container">
+		
+		
+		</div>
+		
+		<input   id="uploadFile"   type="file"  accept="image/*" />
+		<div style="border:1px solid black ; width:50%">123</div>
+		
+		
+		
+	</body>
+	<script>
+		$('body').ready(function(){
+			$('#main_container').HDImageCrop($('#uploadFile'));
+			
+			
+		})
+	</script>
+	
+	
+</html>
+
